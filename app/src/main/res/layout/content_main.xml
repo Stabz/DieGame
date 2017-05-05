@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="standartapp.diegame.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/rollResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's play"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+
+        tools:layout_editor_absoluteY="116dp"
+        tools:layout_editor_absoluteX="163dp" />
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="rollDice"
+        android:text="@string/roll"
+        android:layout_below="@+id/die2Image"
+        tools:layout_editor_absoluteY="447dp"
+        tools:layout_editor_absoluteX="148dp" />
+
+
+
+    <ImageView
+        android:id="@+id/die1Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/rollResult"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/die1"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/die2Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/rollResult"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/die1"
+
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="142dp" />
+
+    <ImageView
+        android:id="@+id/die3Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/rollResult"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/die1"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="268dp" />
+
+    <TextView
+        android:id="@+id/scoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Score: 0"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+</android.support.constraint.ConstraintLayout>
